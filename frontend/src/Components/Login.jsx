@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Login = () => {
+
+  const [isEmail , setIsEmail] = useState('')
+
+
   return (
     <div className='pt-10 '>
 
@@ -39,6 +43,21 @@ const Login = () => {
                     <p className='mt-3'>Welcome Back please filled your details</p>
 
                     <div className='flex flex-col '>
+
+                        <label htmlFor="email">Email</label>
+                        <input 
+                        name='email'
+                         type="text" 
+                         placeholder='Enter your Email'
+                        />
+
+                        <label htmlFor="email">Passwprd</label>
+                        <input 
+                        name='password'
+                         type="password" 
+                         placeholder='Enter your Passwprd'
+                        />
+
 
                     </div>
 
